@@ -80,7 +80,10 @@ later(function()
   add('stevearc/conform.nvim')
 
   require('conform').setup({
-    formatters_by_ft = { lua = { 'stylua' } },
+    formatters_by_ft = {
+      lua = { 'stylua' },
+      python = { "isort", "black" },
+    },
   })
 end)
 
