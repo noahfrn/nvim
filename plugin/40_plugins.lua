@@ -73,11 +73,7 @@ now_if_args(function()
   })
 
 
-  vim.lsp.enable({
-    'lua_ls',
-    'clangd',
-    'ruff'
-  })
+  vim.lsp.enable('lua_ls')
 end)
 
 later(function()
